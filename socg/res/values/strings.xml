@@ -1,0 +1,50 @@
+<resources>
+    
+    <string name="app_name">Songs of Classic Games</string>
+    <string name="title_activity_principal">Songs of Classic Games</string>
+    
+    <string name="text_paused_cellular">Would you like to enable downloading over cellular connections? Depending on your data plan, this may cost you money.</string>
+    <string name="text_paused_cellular_2">If you choose not to enable downloading over cellular connections, the download will automatically resume when Wi-Fi is available.</string>
+    <string name="text_button_resume_cellular">Resume download</string>
+    <string name="text_button_wifi_settings">Wi-Fi settings</string>
+    <string name="text_verifying_download">Verifying download</string>
+    <string name="text_validation_complete">File validation complete. Select OK to exit.</string>
+    <string name="text_validation_failed">File validation failed.</string>
+    <string name="text_button_pause">Pause download</string>
+    <string name="text_button_resume">Resume download</string>
+    <string name="text_button_cancel">Cancel</string>
+    <string name="text_button_cancel_verify">Cancel verification</string>
+    
+    <string name="aleatorio_desligado">Shuffle Off</string>
+    <string name="aleatorio_ligado">Shuffle On</string>
+    <string name="repeticao_desligada">Repeat Off</string>
+    <string name="repeticao_ligada">Repeat On</string>
+    <string name="ajuda">Help</string>
+    <string name="ocultar">Hide</string>
+    <string name="iniciar">Start</string>
+    <string name="pausar">Pause</string>
+    
+    <string name="falha_ao_carregar_musica">Failed to load music</string>
+    <string name="falha_ao_carregar_arquivos">Failed to load files</string>
+    <string name="monte_cartao_memoria">Please, mount your media storage</string>
+    <string name="deseja_fechar_aplicacao">Do you want to close the application?</string>
+    <string name="ok">OK</string>
+    <string name="sim">Yes</string>
+    <string name="nao">No</string>
+    
+    <string name="sobre">About</string>
+    <string name="sobre_texto">
+        v1.4
+        \n\nIf you want to request a game or a song or report a bug, please send me an e-mail. I will be happy to assist you!
+        \nEnjoy! =)
+        \n\nEduardo Da Lua
+        \neduardopappalardo@gmail.com
+    </string>
+    
+    <string name="exportar_ringtone">Export as ringtone</string>
+    <string name="exportar_alarm">Export as alarm</string>
+    <string name="falha_ao_escrever_armazenamento_externo">Failed to write to external storage</string>
+    <string name="processando">Processing...</string>
+    <string name="por_favor_aguarde">Please wait</string>
+    
+</resources>

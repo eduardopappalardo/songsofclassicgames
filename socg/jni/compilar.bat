@@ -1,0 +1,1 @@
+C:\Users\Eduardo\Downloads\Android\android-ndk-r8c\ndk-build.cmd

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@drawable/gradiente_cinza_claro">
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content">
+	    
+	    <RelativeLayout
+	        android:id="@+id/player_activity_relativeLayout_tela"
+	        android:layout_width="266dp"
+	        android:layout_height="203dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="15dp"
+	        android:layout_marginBottom="22dp"
+	        android:background="@drawable/tela">
+	        
+	        <ImageView
+	            android:id="@+id/player_activity_imagem_jogo"
+	            android:layout_width="164.5dp"
+	            android:layout_height="151.5dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="51.5dp"
+	            android:layout_marginTop="26dp"
+	            android:scaleType="fitXY" />
+	        
+	        <TextView
+	            android:id="@+id/player_activity_nome_musica"
+	            android:layout_width="164.5dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@id/player_activity_imagem_jogo"
+	            android:layout_alignLeft="@id/player_activity_imagem_jogo"
+	            android:ellipsize="marquee"
+	            android:fadingEdge="horizontal"
+	            android:marqueeRepeatLimit="marquee_forever"
+	            android:paddingLeft="5dp"
+	            android:paddingRight="5dp"
+	            android:singleLine="true"
+	            android:textAppearance="?android:attr/textAppearanceLarge"
+	            android:textColor="@android:color/white" />
+	        
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/player_activity_relativeLayout_direcional"
+	        android:layout_width="130dp"
+	        android:layout_height="130dp"
+	        android:layout_alignLeft="@id/player_activity_relativeLayout_tela"
+	        android:layout_below="@id/player_activity_relativeLayout_tela"
+	        android:background="@drawable/direcional">
+	
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_musica_anterior"
+	            android:layout_width="40dp"
+	            android:layout_height="60dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_centerVertical="true"
+	            android:background="@android:color/transparent" />
+	        
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_proximo_diretorio"
+	            android:layout_width="60dp"
+	            android:layout_height="40dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:background="@android:color/transparent" />
+	
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_proxima_musica"
+	            android:layout_width="40dp"
+	            android:layout_height="60dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:background="@android:color/transparent" />
+	        
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_diretorio_anterior"
+	            android:layout_width="60dp"
+	            android:layout_height="40dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+	            android:background="@android:color/transparent" />
+	        
+	    </RelativeLayout>
+	    
+	    <ImageView
+	            android:id="@+id/player_activity_texto_botao_musica_anterior"
+	            android:layout_width="15dp"
+	            android:layout_height="wrap_content"
+	            android:layout_toLeftOf="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignTop="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignBottom="@id/player_activity_relativeLayout_direcional"
+	            android:layout_marginRight="4dp"
+	            android:src="@drawable/texto_botao_musica_anterior"
+	            android:visibility="invisible" />
+	    
+	    <ImageView
+	            android:id="@+id/player_activity_texto_botao_proximo_diretorio"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_above="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignLeft="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignRight="@id/player_activity_relativeLayout_direcional"
+	            android:layout_marginBottom="4dp"
+	            android:src="@drawable/texto_botao_proximo_diretorio"
+	            android:visibility="invisible" />
+	    
+	    <ImageView
+	            android:id="@+id/player_activity_texto_botao_proxima_musica"
+	            android:layout_width="15dp"
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignTop="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignBottom="@id/player_activity_relativeLayout_direcional"
+	            android:layout_marginLeft="4dp"
+	            android:src="@drawable/texto_botao_proxima_musica"
+	            android:visibility="invisible" />
+	    
+	    <ImageView
+	            android:id="@+id/player_activity_texto_botao_diretorio_anterior"
+	            android:layout_width="wrap_content"
+	            android:layout_height="15dp"
+	            android:layout_below="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignLeft="@id/player_activity_relativeLayout_direcional"
+	            android:layout_alignRight="@id/player_activity_relativeLayout_direcional"
+	            android:layout_marginTop="4dp"
+	            android:src="@drawable/texto_botao_diretorio_anterior"
+	            android:visibility="invisible" />
+	    
+	    <RelativeLayout
+	        android:id="@+id/player_activity_relativeLayout_botoes_rosa"
+	        android:layout_width="100dp"
+	        android:layout_height="130dp"
+	        android:layout_alignRight="@id/player_activity_relativeLayout_tela"
+	        android:layout_alignTop="@id/player_activity_relativeLayout_direcional">
+	
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_musica_aleatoria"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignParentTop="true"
+	            android:background="@drawable/botao_rosa" />
+	        
+	        <TextView
+	            android:id="@+id/player_activity_texto_botao_musica_aleatoria"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@id/player_activity_botao_musica_aleatoria"
+	            android:layout_below="@id/player_activity_botao_musica_aleatoria"
+	            android:gravity="center_horizontal"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/rosa"
+	            android:textStyle="bold"
+	            android:text="@string/aleatorio_desligado"
+	            android:visibility="invisible" />
+	
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_repeticao_musica"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentBottom="true"
+	            android:background="@drawable/botao_rosa" />
+	        
+	    </RelativeLayout>
+	    
+	    <TextView
+	            android:id="@+id/player_activity_texto_botao_repeticao_musica"
+	            android:layout_width="50dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@id/player_activity_relativeLayout_botoes_rosa"
+	            android:layout_below="@id/player_activity_relativeLayout_botoes_rosa"
+	            android:gravity="center_horizontal"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/rosa"
+	            android:textStyle="bold"
+	            android:text="@string/repeticao_desligada"
+	            android:visibility="invisible" />
+	    
+	    <RelativeLayout
+	        android:layout_width="170dp"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/player_activity_relativeLayout_botoes_rosa"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="40dp">
+	        
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_ajuda"
+	            android:layout_width="60dp"
+	            android:layout_height="38dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentLeft="true"
+	            android:background="@drawable/botao_cinza" />
+	        
+	        <TextView
+	            android:id="@+id/player_activity_texto_botao_ajuda"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@id/player_activity_botao_ajuda"
+	            android:layout_below="@id/player_activity_botao_ajuda"
+	            android:gravity="center_horizontal"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/cinza"
+	            android:textStyle="bold"
+	            android:text="@string/ajuda" />
+	        
+	        <ImageButton
+	            android:id="@+id/player_activity_botao_tocar_pausar"
+	            android:layout_width="60dp"
+	            android:layout_height="38dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentRight="true"
+	            android:background="@drawable/botao_cinza" />
+	
+	        <TextView
+	            android:id="@+id/player_activity_texto_botao_tocar_pausar"
+	            android:layout_width="60dp"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@id/player_activity_botao_tocar_pausar"
+	            android:layout_below="@id/player_activity_botao_tocar_pausar"
+	            android:gravity="center_horizontal"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/cinza"
+	            android:textStyle="bold"
+	            android:text="@string/iniciar" />
+	        
+	    </RelativeLayout>
+	    
+	</RelativeLayout>
+		
+</ScrollView>
